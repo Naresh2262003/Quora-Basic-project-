@@ -69,7 +69,7 @@ app.patch("/posts/:id",(req, res)=>{
     const newContent=req.body.content;
     const post=posts.find((p)=> p.id===id);
     post.content=newContent;
-    res.send("patch working");
+    res.redirect("/posts");
 });
 
 app.delete("/posts/:id",(req,res)=>{
@@ -77,3 +77,5 @@ app.delete("/posts/:id",(req,res)=>{
     posts=posts.filter((p)=> p.id!==id);
     res.redirect("/posts");
 });
+
+// new file  updated

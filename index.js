@@ -78,4 +78,4 @@ app.delete("/posts/:id",(req,res)=>{
     res.redirect("/posts");
 });
 
-// new file  updated
+// oooos

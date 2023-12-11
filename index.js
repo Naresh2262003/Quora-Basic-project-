@@ -77,5 +77,3 @@ app.delete("/posts/:id",(req,res)=>{
     posts=posts.filter((p)=> p.id!==id);
     res.redirect("/posts");
 });
-
-// oooos
